@@ -60,7 +60,7 @@ html {
 body {
   font-size: 1.6rem;
   background: var(--bg);
-  background-image: url('images/bg.jpg');
+  background-image: url('../images/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
