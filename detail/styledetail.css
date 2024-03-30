@@ -5,3 +5,8 @@
     -1px 1px 0 #000,
     1px 1px 0 #000; 
 }
+
+.dropdown-menu {
+  max-height: 400px; /* Ganti nilai sesuai kebutuhan */
+  overflow-y: auto;
+}
