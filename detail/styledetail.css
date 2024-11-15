@@ -10,3 +10,83 @@
   max-height: 400px; /* Ganti nilai sesuai kebutuhan */
   overflow-y: auto;
 }
+
+.hidden {
+   opacity: 0;
+   transform: translateY(20px); /* Geser sedikit ke bawah */
+   transition: opacity 1.6s ease, transform 1.6s ease;
+}
+
+.fade-in {
+   opacity: 1;
+   transform: translateY(0); /* Posisi normal */
+}
+
+/* Styles untuk modal preview gambar */
+.preview-modal {
+    display: none; /* Pastikan modal tersembunyi secara default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Gelapkan latar belakang */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview-img-lg {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #f1f1f1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Untuk mengatur gambar pada gallery */
+.preview-trigger {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.preview-trigger:hover {
+    transform: scale(1.05);
+}
+
+.preview-modal {
+    display: none; /* Modal tersembunyi secara default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.preview-modal.active { /* Modal hanya muncul jika memiliki kelas active */
+    display: flex;
+}
+
+#trailerModal .modal-dialog {
+    max-width: 65%;  /* Menyesuaikan lebar modal antara lg dan xl */
+    max-height: 60vh; /* Menyesuaikan tinggi modal */
+}

@@ -84,15 +84,40 @@
         <div class="col-md-9">
           <h1 class="data">Princess Mononoke</h1>
           <p class="data">Tanggal Rilis : 12 Juli 1997 <br> Durasi film : <br> Genre : Action, Adventure, Award Winning, Fantasy </p>
-          <a class="btn btn-danger" href="" target="_blank" role="button">Mulai menonton</a>
+                <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#trailerModal" role="button">Lihat Trailer</a>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
-  <!--Akhir showcase-->
+</section>
+<!-- Akhir showcase -->
+
+<!-- Modal -->
+<div class="modal fade" id="trailerModal" tabindex="-1" aria-labelledby="trailerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-dark" id="trailerModalLabel">Trailer - Princess Mononoke</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Video YouTube -->
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/opCxPAwdB6U" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
 
 <!--Awal Cover-->
-<div id="synopsis" class="container-fluid">
+<div id="synopsis" class="container-fluid hidden">
     <div class="container">
         <div class="row mt-2">
             <div class="col-lg-12 col-md-12 mb-1 mt-5">
@@ -123,7 +148,7 @@
         </div>
     </div>
 </div>
-      <section class="container">
+      <section class="container hidden">
          <div class="card__container swiper">
             <div class="card__content">
                <div class="swiper-wrapper">
@@ -203,28 +228,34 @@
     </div>
 </div>
 
-  <div class="container">
+  <div class="container hidden">
     <div class="row mt-5">
       <div class="col-lg-4 col-md-6 mb-4">
-        <img src="../images/gallery/princess_mononoke/1.jpg" class="custom-img img-fluid" alt="Gambar 1">
+        <img src="../images/gallery/princess_mononoke/1.jpg" class="custom-img img-fluid preview-trigger" alt="Gambar 1">
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
-        <img src="../images/gallery/princess_mononoke/2.jpg" class="custom-img img-fluid" alt="Gambar 2">
+        <img src="../images/gallery/princess_mononoke/2.jpg" class="custom-img img-fluid preview-trigger" alt="Gambar 2">
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
-        <img src="../images/gallery/princess_mononoke/3.jpg" class="custom-img img-fluid" alt="Gambar 3">
+        <img src="../images/gallery/princess_mononoke/3.jpg" class="custom-img img-fluid preview-trigger" alt="Gambar 3">
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
-        <img src="../images/gallery/princess_mononoke/4.jpg" class="custom-img img-fluid" alt="Gambar 1">
+        <img src="../images/gallery/princess_mononoke/4.jpg" class="custom-img img-fluid preview-trigger" alt="Gambar 1">
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
-        <img src="../images/gallery/princess_mononoke/5.jpg" class="custom-img img-fluid" alt="Gambar 2">
+        <img src="../images/gallery/princess_mononoke/5.jpg" class="custom-img img-fluid preview-trigger" alt="Gambar 2">
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
-        <img src="../images/gallery/princess_mononoke/6.jpg" class="custom-img img-fluid" alt="Gambar 3">
+        <img src="../images/gallery/princess_mononoke/6.jpg" class="custom-img img-fluid preview-trigger" alt="Gambar 3">
       </div>  
     </div>
   </div>
+
+<!-- Modal Preview Gambar -->
+<div class="preview-modal">
+    <span class="close">&times;</span>
+    <img class="preview-img-lg" src="" alt="Preview Gambar">
+</div>
 <!--Akhir Gallery-->
 
 <!--Awal Footer-->
